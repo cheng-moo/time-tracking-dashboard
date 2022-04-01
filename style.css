@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik' ,'Times New Roman', Times, serif;
+}
+body {
+    /*Primary Colors*/
+    --blue: hsl(246, 80%, 60%);
+    --work: hsl(15,100%,70%);
+    --play: hsl(195,74%,62%);
+    --study: hsl(348,100%,68%);
+    --exercise: hsl(145,58%,55%);
+    --social: hsl(264,64%,52%);
+    --self-care: hsl(43,84%,65%);
+    /*Neutral*/
+    --very-dark-blue: hsl(226,43%,10%);
+    --dark-blue: hsl(235,46%,20%);
+    --desaturated-blue: hsl(235,45%,61%);
+    --pale-blue: hsl(236,100%,87%); 
+    background-color: var(--very-dark-blue);
+    width: 1440px;
+}
+.profile {
+    color: var(--pale-blue);
+    background-color: var(--blue);
+    padding: 17px;
+    
+    border-radius: 12px;
+}
+.profile img {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    box-shadow: 1px 1px 9px 3px #0000005c;
+}   
+.profile p {
+    font-size: 10px;
+    font-weight: 300;
+}
+.profile .name {
+    font-weight: 500;
+    font-size: 18px;
+}
+.interval {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--desaturated-blue);
+    background-color: var(--dark-blue);
+    padding: 17px;
+    border-radius: 12px;
+    
+}
+.interval .weekly {
+    margin: 10px 0;
+}
+.background {
+    z-index: -1;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 12px;
+}
+.work .background {
+    background-color: var(--work);
+}
+.category {
+    color: #fff;
+    background-color: var(--dark-blue);
+}
+.heading-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    
+}
+.heading-container img {
+   width: 15px;
+   
+}
