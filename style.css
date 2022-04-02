@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
     font-family: 'Rubik' ,'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+    width: 100%
 }
 body {
     /*Primary Colors*/
@@ -51,29 +56,104 @@ body {
     border-radius: 12px;
     
 }
+.interval .daily {
+    margin-top: 5px;
+}
 .interval .weekly {
-    margin: 10px 0;
+    margin: 15px 0;
 }
 .background {
     z-index: -1;
     display: flex;
     justify-content: flex-end;
     padding-right: 12px;
+    height: 54px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
 }
 .work .background {
     background-color: var(--work);
 }
+.play .background {
+    background-color: var(--play);
+}
+.study  .background {
+    background-color: var(--study);
+}
+.exercise .background {
+    background-color: var(--exercise);
+}
+.social .background {
+    background-color: var(--social);
+}
+.self-care .background {
+    background-color: var(--self-care);
+}
 .category {
     color: #fff;
     background-color: var(--dark-blue);
+    border-radius: 6px;
 }
 .heading-container {
     display: flex;
     justify-content: space-between;
-    padding: 10px 30px;
+    padding: 10px 18px;
     
 }
 .heading-container img {
    width: 15px;
+}
+ .current {
+    font-weight: 400;
+    font-size: 32px;
+    padding-left: 30px;
+}
+ .prev {
+    font-weight: 300;
+    font-size: 12px;
+    color: var(--pale-blue);
+    padding-left: 30px;
+    padding-top: 10px;
+}
+body {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 1440px;
+   height: 100%;
+   margin: 0 auto;
    
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 200px);
+    grid-template-rows: 300px 300px;
+    border: 1px solid #fff;
+    height: 2000px;
+    width: 100%;
+   
+
+}
+.wrapper .profile {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    height: 310px;
+}
+.wrapper .interval {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    height: fit-content;
+    z-index: -1;
+}
+.wrapper .categories {
+    grid-column: 2/-1;
+}
+.categories {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3,200px);
+    grid-template-rows: 200px 200px;
+}
+.display {
+    display: none;
 }
