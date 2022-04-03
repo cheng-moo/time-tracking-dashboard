@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/responsive-time-track-dashboard-css-grids-js-eventlisteners-rJom9Fvm9)
+- Live Site URL: [Live](https://medblutex.github.io/time-tracking-dashboard/)
 
 ## My process
 
