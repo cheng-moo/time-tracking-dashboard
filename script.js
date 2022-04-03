@@ -43,6 +43,7 @@ daily.addEventListener('click', active);
 weekly.addEventListener('click', active);
 monthly.addEventListener('click', active);
 function active (e) {
+  
     if(e.target === daily) {
       
         catDaily.forEach(cat => {
@@ -76,6 +77,7 @@ function active (e) {
           })
     }
 }
+
 
     
 daily.addEventListener('click', activestate);
