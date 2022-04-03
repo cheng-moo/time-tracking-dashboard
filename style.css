@@ -6,7 +6,7 @@
 }
 html {
     height: 100%;
-    width: 100%
+    width: 100%;
 }
 body {
     /*Primary Colors*/
@@ -56,14 +56,23 @@ body {
     background-color: var(--dark-blue);
     padding: 17px;
     border-radius: 12px;
-    
 }
 .interval .daily {
     margin-top: 5px;
+    transition: all 0.3s;
+    cursor: pointer;
+
 }
 .interval .weekly {
     margin: 15px 0;
+    transition: all 0.3s;
+    cursor: pointer;
 }
+.interval .monthly {
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
 .background {
     z-index: 0;
     display: flex;
@@ -99,6 +108,7 @@ body {
 .category {
     color: #fff;
     border-radius: 6px;
+    
 }
 .background img {
     z-index: 0;
@@ -111,7 +121,7 @@ body {
     border-radius: 6px;
     z-index: 1;
     position: relative;
-
+    cursor: pointer;
     
 }
 .heading-container {
@@ -124,10 +134,11 @@ body {
    width: 15px;
 }
  .current {
-    margin-top: 22px;
+    margin-top: 7px;
     font-weight: 400;
     font-size: 32px;
     padding-left: 30px;
+
 }
  .prev {
     font-weight: 300;
@@ -159,12 +170,13 @@ body {
     grid-column: 1/2;
     grid-row: 1/2;
     height: 310px;
+    z-index: 1;
 }
 .wrapper .interval {
     grid-column: 1/2;
     grid-row: 2/3;
     height: fit-content;
-    z-index: -1;
+    
 }
 .wrapper .categories {
     grid-column: 2/-1;
@@ -178,7 +190,26 @@ body {
 }
 .display {
     display: none;
+    
 }
+.ellipsis {
+    opacity: 0.5;
+}
+.body-container {
+    height: 73%;
+}
+
+/* hover state */
+.body-container:hover {
+    mix-blend-mode: screen;
+}
+.wrapper .interval .daily:hover, .wrapper .interval .weekly:hover, .wrapper .interval .monthly:hover {
+    color: #fff;
+}
+.ellipsis:hover {
+    opacity: 1;
+}
+
 @media screen and (max-width: 375px) {
     body {
         width: 375px;
@@ -217,6 +248,12 @@ body {
         grid-template-rows: 200px 200px;
         grid-auto-rows: 200px;
     }
+    .wrapper .interval {
+        display: flex;
+        justify-content: space-around;
+        margin-top: -20px;
+    }
+    .wrapper .interval .daily, .wrapper .interval .weekly, .wrapper .interval .monthly {margin: 0;}
 }
 .attribution {
     color: #fff;
